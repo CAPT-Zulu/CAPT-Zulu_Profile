@@ -1,6 +1,7 @@
-<p align="center">
+<h1 align="center">
   Absolutely Bonkers
-</p>
+</h1>
+<br>
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=CAPT-Zulu&show_icons=true&theme=radical">
 </p>
