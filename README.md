@@ -1,4 +1,6 @@
-# CAPT-Zulu_Profile
+<p align="center">
+  Absolutely Bonkers
+</p>
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=CAPT-Zulu&show_icons=true&theme=radical">
 </p>
