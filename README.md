@@ -1,2 +1,5 @@
 # CAPT-Zulu_Profile
-Profile readme
+<div>
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=CAPT-Zulu&show_icons=true&theme=radical">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CAPT-Zulu&layout=compact&theme=radical">
+</div>
