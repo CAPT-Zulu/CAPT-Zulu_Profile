@@ -1,4 +1,6 @@
+![alt text](https://github.com/CAPT-Zulu/CAPT-Zulu/raw/main/lib/logo.png "This image is from Garry's Mod using an Half-Life 2 asset which is owned by Valve.")
 # CAPT-Zulu
+![alt text](https://github.com/CAPT-Zulu/CAPT-Zulu/raw/main/lib/logo.png "This image is from Garry's Mod using an Half-Life 2 asset which is owned by Valve.")
 ### Coding languages I use:
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
