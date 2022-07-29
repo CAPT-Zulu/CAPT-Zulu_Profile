@@ -1,4 +1,3 @@
-![alt text](https://github.com/CAPT-Zulu/CAPT-Zulu/raw/main/lib/logo.png "This image is from Garry's Mod using an Half-Life 2 asset which is owned by Valve.")
 # CAPT-Zulu
 ![alt text](https://github.com/CAPT-Zulu/CAPT-Zulu/raw/main/lib/logo.png "This image is from Garry's Mod using an Half-Life 2 asset which is owned by Valve.")
 ### Coding languages I use:
