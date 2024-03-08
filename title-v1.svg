@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" id="Title">
     <!-- Style -->
     <style>
-        @media (prefers-color-scheme: light) {
+        @media (prefers-color-scheme: dark) {
             #Background {
                 fill: black;
             }
@@ -17,7 +17,7 @@
                 fill: white;
             }
         }
-        @media (prefers-color-scheme: dark) {
+        @media (prefers-color-scheme: light) {
             #Background {
                 fill: white;
             }
