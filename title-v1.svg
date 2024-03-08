@@ -61,7 +61,7 @@
             <feComposite in="SourceGraphic" in2="blur" operator="in" result="mix" />
         </filter>
         <path id="type">
-            <animate attributeName="d" from="m0,200 h0" to="m0,200 h1100" dur="6s" begin="0s" fill="freeze"/>
+            <animate attributeName="d" from="m0,180 h0" to="m0,180 h1100" dur="6s" begin="0s" fill="freeze"/>
         </path>
         <pattern id="textpattern" x="0" y="0" width="300%" height="100%" patternUnits="userSpaceOnUse">
             <rect x="0" y="0" width="150%" height="100%" fill="url(#gradienttext)">
@@ -104,7 +104,7 @@
         </g>
     </g>
     <g id="Name" fill="none">
-        <text x="400" font-family="Montserrat" font-size="50" fill="url(#textpattern)" text-anchor="middle">
+        <text x="400" font-family="Montserrat" font-size="80" fill="url(#textpattern)" text-anchor="middle">
             <textPath xlink:href="#type">TheBox</textPath>
         </text>
     </g>
