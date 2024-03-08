@@ -1,0 +1,62 @@
+<!-- Coded by hand cause I'm a loser. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" id="Title">
+    <!-- Style -->
+    <style>
+        @keyframes grow {
+            from {
+                width: 60;
+                height: 20;
+                x: 570;
+                y: 190;
+            }
+            to {
+                width: 100%;
+                height: 100%;
+                x: 0%;
+                y: 0;
+            }
+        }
+
+        /* CSS for the 3D perspective effect */
+        .perspective {
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+    </style>
+    <!-- Gradients -->
+    <defs>
+        
+    </defs>
+    <!-- Groups -->
+    <g id="Background" fill="none">
+        <!-- Removed -->
+    </g>
+    <g id="Test1" fill="none">
+        <!--  -->
+        <g id="Test2" fill="none">
+            <rect x="570" y="190" width="60" height="20" stroke-width="2" stroke="#4d585c" />
+            <rect x="570" y="190" width="60" height="20" stroke-width="2" stroke="#4d585c" style="animation: grow 2s ease-in infinite;" />
+            <rect x="570" y="190" width="60" height="20" stroke-width="2" stroke="#4d585c" style="animation: grow 2s ease-in infinite; animation-delay: 1s;" />
+            
+        </g>
+        <g id="Test3" fill="none">
+            <path d="M 0 0 L 570 190" stroke-width="2" stroke="#4d585c" />
+            <path d="M 1200 0 L 630 190" stroke-width="2" stroke="#4d585c" />
+
+            <path d="M 0 400 L 570 210" stroke-width="2" stroke="#4d585c" />
+            <path d="M 1200 400 L 630 210" stroke-width="2" stroke="#4d585c" />
+        </g>
+
+        <g id="Test4" fill="none">
+            <!-- Foreign object with an img tag -->
+            <foreignObject x="570" y="190" width="60" height="20" class="perspective">
+                <div xmlns="http://www.w3.org/1999/xhtml">
+                    <img src="https://bghq.com/textures/doom/189.png" width="100%" height="100%" />
+                </div>
+            </foreignObject>
+        </g>
+    </g>
+    <g id="Name" fill="none">
+        <!-- Removed -->
+    </g>
+</svg>
