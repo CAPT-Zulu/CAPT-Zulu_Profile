@@ -2,37 +2,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" id="Title">
     <!-- Style -->
     <style>
-        @media (prefers-color-scheme: dark) {
-            #Background {
-                fill: black;
-            }
-            #Bars rect {
-                fill: white;
-            }
-            .name-tag {
-                fill: black;
-                stroke: white;
-            }
-            .name-tag text {
-                fill: white;
-            }
-        }
-        @media (prefers-color-scheme: light) {
-            #Background {
-                fill: white;
-            }
-            #Bars rect {
-                fill: black;
-            }
-            .name-tag {
-                fill: white;
-                stroke: black;
-            }
-            .name-tag text {
-                fill: black;
-            }
-        }
-
         @keyframes grow-horz {
             0% {
                 width: 0;
@@ -55,8 +24,8 @@
                 opacity: 0;
             }
             100% {
-                r: 300px;
-                opacity: 0.5;
+                r: 400px;
+                opacity: 1;
             }
         }
 
@@ -66,45 +35,50 @@
         #Bars-Top rect {
             animation: grow-vert 2s ease-in-out forwards;
         }
-        .blue-light {
+        .gradient-light {
             animation: grow-circle 4s ease-in-out forwards;
-        }
-        .name-tag {
-            
         }
     </style>
     <!-- Gradients -->
     <defs>
-        <radialGradient id="blueLight" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-            <stop offset="0%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
-            <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:0" />
+        <radialGradient id="gradientlight" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color:#3f6271;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#3f6271;stop-opacity:0" />
         </radialGradient>
+        <linearGradient id="gradientbars" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#4d585c;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#4d585c;stop-opacity:0" />
+        </linearGradient>
+        <filter id="acrylic">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+            <feComposite in="SourceGraphic" in2="blur" operator="in" result="mix" />
+        </filter>
     </defs>
     <!-- Groups -->
     <g id="Background" fill="none">
         <!-- Light gradient -->
-        <circle cx="400" cy="0" r="300" fill="url(#blueLight)" class="blue-light" />
+        <circle cx="400" cy="0" r="300" fill="url(#gradientlight)" filter="url(#acrylic)" class="gradient-light" />
     </g>
     <g id="Bars" fill="none">
         <!-- Left bars -->
         <g id="Bars-Left" fill="none">
-            <rect x="0" y="100" width="0" height="2" fill="black" style="animation-delay: 0s;" />
-            <rect x="0" y="200" width="0" height="2" fill="black" style="animation-delay: 0.2s;" />
-            <rect x="0" y="300" width="0" height="2" fill="black" style="animation-delay: 0.4s;" />
+            <rect x="0" y="100" width="0" height="2" fill="#4d585c" style="animation-delay: 0s; opacity: 0.8" />
+            <rect x="0" y="200" width="0" height="2" fill="#4d585c" style="animation-delay: 0.2s; opacity: 0.6" />
+            <rect x="0" y="300" width="0" height="2" fill="#4d585c" style="animation-delay: 0.4s; opacity: 0.4" />
+        
         </g>
         <!-- Top bars-->
         <g id="Bars-Top" fill="none">
-            <rect x="100" y="0" width="2" height="0" fill="black" style="animation-delay: 0.2s;" />
-            <rect x="200" y="0" width="2" height="0" fill="black" style="animation-delay: 0.4s;" />
-            <rect x="300" y="0" width="2" height="0" fill="black" style="animation-delay: 0.6s;" />
-            <rect x="400" y="0" width="2" height="0" fill="black" style="animation-delay: 0.8s;" />
-            <rect x="500" y="0" width="2" height="0" fill="black" style="animation-delay: 1s;" />
-            <rect x="600" y="0" width="2" height="0" fill="black" style="animation-delay: 1.2s;" />
-            <rect x="700" y="0" width="2" height="0" fill="black" style="animation-delay: 1.4s;" />
+            <rect x="100" y="0" width="2" height="0" fill="url(#gradientbars)" style="animation-delay: 0.2s;" />
+            <rect x="200" y="0" width="2" height="0" fill="url(#gradientbars)" style="animation-delay: 0.4s;" />
+            <rect x="300" y="0" width="2" height="0" fill="url(#gradientbars)" style="animation-delay: 0.6s;" />
+            <rect x="400" y="0" width="2" height="0" fill="url(#gradientbars)" style="animation-delay: 0.8s;" />
+            <rect x="500" y="0" width="2" height="0" fill="url(#gradientbars)" style="animation-delay: 1s;" />
+            <rect x="600" y="0" width="2" height="0" fill="url(#gradientbars)" style="animation-delay: 1.2s;" />
+            <rect x="700" y="0" width="2" height="0" fill="url(#gradientbars)" style="animation-delay: 1.4s;" />
         </g>
     </g>
     <g id="Name" fill="none">
-        <rect class="name-tag" x="250" y="125" width="300" height="150" fill="grey" stroke="black" stroke-width="2" rx="10" />
         <text x="400" y="200" font-family="Arial" font-size="50" fill="black" text-anchor="middle">Title</text>
     </g>
 </svg>
