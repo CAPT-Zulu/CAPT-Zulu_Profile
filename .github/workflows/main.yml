@@ -12,10 +12,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # Token
           token: ${{ secrets.METRICS_TOKEN }}
-
-          # Options
           user: CAPT-Zulu
           base: header, activity, community, repositories, metadata
 
